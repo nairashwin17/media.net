@@ -106,3 +106,32 @@ table {
   tbody tr:nth-child(odd) {
     background-color: #dddddd;
   }
+
+  @media only screen and (max-width: 1024px) {
+      .search{
+          width: 50%;
+      }
+  }
+  @media only screen and (max-width: 768px){
+    .leftcontainer {
+        flex: 40%;
+        max-width: 40%;
+    }
+    .rightcontainer {
+        flex: 60%;
+        max-width: 60%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .leftcontainer {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .rightcontainer {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .mainwrapper{
+        flex-direction: column;
+    }
+}
