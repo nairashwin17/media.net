@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="mainwrapper">
+        <div class="leftcontainer">
+            <div class="inputdata">
+                <label for="emailaddress">Email Address</label>
+                <input type="email" name="getemail" class="email" id="emailaddress"  />
+                <input class="addemail" type="button" value="Add" id="addemailtotab" />
+            </div>
+        </div>
+        <div class="rightcontainer">
+            <div class="searchbar">
+                <span>Search</span>
+                <input type="text" placeholder="Search.." class="search" required>
+                <button id="searchme">Go</button>
+            </div>
+            <div class="enabled">
+                <label for="">
+                    <input type="checkbox" name="" id="enableme"> &nbsp;Show Only Enabled
+                </label>
+            </div>
+            <div class="table-data">
+                <table class="mytable">
+                    <tbody id="mytbody">
+                        <thead>
+                                <tr>
+                                    <th class="text-center">IsEnabled</th>
+                                    <th class="text-left">Email</th>
+                                    <th class="text-center">Delete</th>
+                                </tr>
+                        </thead>
+                        <tbody id="myemaildata">
+
+                        </tbody>
+                       
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/vanilla.js"></script>
+</body>
+</html>
