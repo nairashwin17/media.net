@@ -87,6 +87,9 @@
 .delete{
     cursor: pointer;
 }
+ .removeme{
+      display: none;
+  }
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
