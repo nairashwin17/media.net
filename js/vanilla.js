@@ -39,10 +39,10 @@ $(document).ready(function(){
     });
     $('#enableme').click(function(){
         if($(this).prop("checked") == true){
-            $('.checkme:checkbox:not(:checked)').parents('tr').css('display','none');
+            $('.checkme:checkbox:not(:checked)').parents('tr').addClass('removeme');
         }
         else if($(this).prop("checked") == false){
-            $('.checkme:checkbox:not(:checked)').parent('tr').css('display','block');
+            $('.checkme:checkbox:not(:checked)').parents('tr').removeClass('removeme');
         }
     });
     
